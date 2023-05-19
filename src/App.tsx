@@ -1,6 +1,26 @@
 import React from "react"
 import AnfisaImage from './assets/anfisa.gif';
-
+import typescript from './assets/images/typescript.png'
+import javascript from './assets/images/javascript.png'
+import html from './assets/images/html.png'
+import css from './assets/images/css.png'
+import nodejs from './assets/images/nodejs.png'
+import react from './assets/images/reactjs.png'
+import redux from './assets/images/redux.png'
+import nextjs from './assets/images/nextjs.png'
+import express from './assets/images/express.png'
+import tailwind from './assets/images/tailwindcss.png'
+import mongodb from './assets/images/mongodb.png'
+import mongoose from './assets/images/mongoose.png'
+import postgresql from './assets/images/postgre.png'
+import sequelize from './assets/images/sequelize.png'
+import api from './assets/images/api.png'
+import vercel from './assets/images/vercel.svg'
+import git from './assets/images/git.png'
+import gitflow from './assets/images/gitflow.png'
+import railway from './assets/images/railway.svg'
+import firebase from './assets/images/firebase.jpg'
+import clean from './assets/images/clean.png'
 
 function App() {
   const [project1 , setProject1] = React.useState(false)
@@ -15,7 +35,7 @@ function App() {
     <div className="flex flex-col justify-center items-center pt-20">
 
       {/* SECCION 1 */}
-      <div className="w-[100%] flex flex-row justify-between items-center pb-6">
+      <div className="w-[100%] flex flex-row justify-between items-center pb-8">
         <div className="flex flex-row gap-2 ">
           <div className="w-[50px] h-[50px] rounded-full bg-cover bg-no-repeat bg-center bg-[url(https://res.cloudinary.com/dbhtt5ozr/image/upload/v1684528398/IMG_8209wwwww_et2cfd.jpg)] "></div>
           <p className="text-[30px] font-bold">Manuel Nácer</p>
@@ -40,8 +60,8 @@ function App() {
 
       {/* SECCION 3 */}
 
-      <div className="pt-5 flex flex-col w-full">
-        <p className="text-[25px] font-bold pb-2">Projects</p>
+      <div className="pt-12 flex flex-col w-full">
+        <p className="text-[25px] font-bold pb-6">Projects</p>
         <div className="flex flex-row w-full gap-4 justify-around items-center">
 
           {/* CUADRO PROYECTO */}
@@ -76,16 +96,120 @@ function App() {
       </div>
 
       {/* SECCION 4 */}
-      <div className="pt-5 flex flex-col w-full">
-        <p className="text-[25px] font-bold pb-2">Technologies</p>
-        <div className="w-fit border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer">
-          <img src="" alt="" /> <p>TypeScript</p> 
+      <div className="pt-12 flex flex-col w-full">
+        <p className="text-[25px] font-bold pb-6">Technologies</p>
+
+        <div className="flex flex-row gap-3 pb-3">
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={typescript} alt="typescript" /> <p>TypeScript</p> 
+          </div>   
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={javascript} alt="javascript" /> <p>JavaScript</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={html} alt="html" /> <p>HTML</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={css} alt="CSS" /> <p>CSS</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={tailwind} alt="tailwind" /> <p>Tailwind CSS</p> 
+          </div>  
+
+        </div>
+
+        <div className="flex flex-row gap-3 pb-3">
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={nodejs} alt="nodejs" /> <p>Node JS</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={react} alt="react" /> <p>React JS</p> 
+          </div>   
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={redux} alt="redux" /> <p>Redux</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={nextjs} alt="nextjs" /> <p>Next JS</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={express} alt="express" /> <p>Express JS</p> 
+          </div>  
+
         </div>   
+
+        <div className="flex flex-row gap-3 pb-3">
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={api} alt="API" /> <p>Rest API</p> 
+          </div>
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={mongodb} alt="mongodb" /> <p>MongoDB</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="bg-white w-auto h-[1.5rem]" src={mongoose} alt="mongoose" /> <p>Mongoose</p> 
+          </div>   
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={postgresql} alt="postgresql" /> <p>PostgreSQL</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={sequelize} alt="sequelize" /> <p>Sequelize</p> 
+          </div>  
+
+        </div>         
+
       </div>
 
       {/* SECCION 5 */}
-      <div className="pt-5 flex flex-col w-full">
-        <p className="text-[25px] font-bold pb-2">Siguiente seccion</p>
+      <div className="pt-2 flex flex-col w-full">
+        <p className="text-[25px] font-bold pb-6">Others</p>
+
+        <div className="flex flex-row gap-3 pb-3">
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={git} alt="git" /> <p>Git</p> 
+          </div>   
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={gitflow} alt="gitflow" /> <p>Git Flow</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={railway} alt="railway" /> <p>Railway</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={vercel} alt="vercel" /> <p>Vercel</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={firebase} alt="firebase" /> <p>Firebase</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={clean} alt="clean" /> <p>Clean Architecture</p> 
+          </div>  
+
+        </div>
+ 
+      </div>
+
+      {/* SECCION 6 */}
+      <div className="pt-12 flex flex-col w-full">
+        <p className="text-[25px] font-bold pb-6">Siguiente seccion</p>
   
       </div>
 
