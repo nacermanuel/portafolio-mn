@@ -21,6 +21,9 @@ import gitflow from './assets/images/gitflow.png'
 import railway from './assets/images/railway.svg'
 import firebase from './assets/images/firebase.jpg'
 import clean from './assets/images/clean.png'
+import linkedin from './assets/images/linkedin1.jpg'
+import youtube from './assets/images/youtube.png' 
+import gmail from './assets/images/gmail.png'
 
 function App() {
   const [project1 , setProject1] = React.useState(false)
@@ -209,8 +212,41 @@ function App() {
 
       {/* SECCION 6 */}
       <div className="pt-12 flex flex-col w-full">
-        <p className="text-[25px] font-bold pb-6">Siguiente seccion</p>
-  
+        <p className="text-[25px] font-bold pb-6">Contact</p>
+        <div className="flex flex-row gap-3 pb-3">
+          <div className="w-[50%]">
+            <p className="pb-3">Let's build something! Contact me:</p>
+
+            <div className="flex flex-col justify-center items-start gap-3">
+
+                <a className="flex flex-row justify-center items-center gap-3  " href="https://github.com/nacermanuel">
+                  <img className="w-auto h-[2.5rem] rounded-full" src={gitflow} alt="git" />
+                  <p>https://github.com/nacermanuel</p>
+                </a>
+
+                <a className="flex flex-row justify-center items-center gap-3  " href="https://www.linkedin.com/in/mfnacer/">
+                  <img className="w-auto h-[2.5rem]" src={linkedin} alt="linkedin" />
+                  <p>https://www.linkedin.com/in/mfnacer/</p>
+                </a>
+
+                <a className="flex flex-row justify-center items-center gap-3  " href="https://youtube.com/@bootcamp3rs">
+                  <img className="w-auto h-[2rem]" src={youtube} alt="youtube" />
+                  <p>https://youtube.com/@bootcamp3rs</p>
+                </a>
+
+                <a className="flex flex-row justify-center items-center gap-3  " href="mailto:nacermanuel@gmail.com">
+                  <img className="w-auto h-[2rem]" src={gmail} alt="git" />
+                  <p>nacermanuel@gmail.com</p>
+                </a>
+
+            </div>
+          </div>
+
+          <div className="w-[50%]">
+            hola
+          </div>
+
+        </div>
       </div>
 
     </div>
