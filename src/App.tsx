@@ -24,10 +24,13 @@ import clean from './assets/images/clean.png'
 import linkedin from './assets/images/linkedin1.jpg'
 import youtube from './assets/images/youtube.png' 
 import gmail from './assets/images/gmail.png'
+import { Form } from "./components/Form";
+
 
 function App() {
   const [project1 , setProject1] = React.useState(false)
-  const [project2 , setProject2] = React.useState(false)  
+  const [project2 , setProject2] = React.useState(false)
+  const [ingles, setIngles] = React.useState(true)  
   const style1 = 'flex flex-col'
   const style2 = 'hidden'
 
@@ -45,10 +48,10 @@ function App() {
         </div>
         <div className="flex gap-2">
           <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer">
-            <p>opcion  1</p> 
+            <p>Resume &#128196;</p> 
           </div>
-          <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer">
-            <p>opcion  1</p> 
+          <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer" onClick={()=> setIngles(!ingles)}>
+            { !ingles ? <p>English&#128257;</p> : <p>Español&#128257;</p> }
           </div>
         </div>
       </div>
@@ -58,13 +61,13 @@ function App() {
         Hello, I'm Manuel, a full-stack software developer. I've acquired  my skills through a rigorous bootcamp called SoyHenry and extensive self-study, but my true expertise has come from building my own projects. My passion lies in leveraging technology as a problem solver, and my goal is to work within a company that shares this vision.
         <br />
         <br />
-         In addition to my technical skills, I have held leading roles in the operation of businesses with annual sales surpassing USD$100,000. This hands-on experience has given me a deep understanding of commercial strategies, expertise in running complex Facebook ads campaigns, and a comprehensive grasp of financial structures within businesses. I synergize my tech skills and business expertise to bring value to the table. 
+         In addition to my technical skills, I have held leading roles in the operation of businesses with annual revenue surpassing USD$100,000. This hands-on experience has given me a deep understanding of commercial strategies, expertise in running complex Facebook ads campaigns, and a comprehensive grasp of financial structures within businesses. I synergize my tech skills and business expertise to bring value to the table. 
       </div>
 
       {/* SECCION 3 */}
 
       <div className="pt-12 flex flex-col w-full">
-        <p className="text-[25px] font-bold pb-6">Projects</p>
+        <p className="text-[25px] font-bold pb-6">Projects &#128188;</p>
         <div className="flex flex-row w-full gap-4 justify-around items-center">
 
           {/* CUADRO PROYECTO */}
@@ -100,7 +103,7 @@ function App() {
 
       {/* SECCION 4 */}
       <div className="pt-12 flex flex-col w-full">
-        <p className="text-[25px] font-bold pb-6">Technologies</p>
+        <p className="text-[25px] font-bold pb-6">Technologies &#128104;&#8205;&#128187;</p>
 
         <div className="flex flex-row gap-3 pb-3">
 
@@ -212,7 +215,7 @@ function App() {
 
       {/* SECCION 6 */}
       <div className="pt-12 flex flex-col w-full">
-        <p className="text-[25px] font-bold pb-6">Contact</p>
+        <p className="text-[25px] font-bold pb-6">Contact &#128236;</p>
         <div className="flex flex-row gap-3 pb-3">
           <div className="w-[50%]">
             <p className="pb-3">Let's build something! Contact me:</p>
@@ -225,7 +228,7 @@ function App() {
                 </a>
 
                 <a className="flex flex-row justify-center items-center gap-3  " href="https://www.linkedin.com/in/mfnacer/">
-                  <img className="w-auto h-[2.5rem]" src={linkedin} alt="linkedin" />
+                  <img className="w-auto h-[2.5rem] rounded-lg" src={linkedin} alt="linkedin" />
                   <p>https://www.linkedin.com/in/mfnacer/</p>
                 </a>
 
@@ -243,7 +246,7 @@ function App() {
           </div>
 
           <div className="w-[50%]">
-            hola
+            <Form/>
           </div>
 
         </div>

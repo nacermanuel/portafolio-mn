@@ -33,8 +33,19 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #13111C;
   color: #FFFFEA;
+
+  /* background: rgb(19, 17, 28);
+  background: linear-gradient(56deg, rgba(19, 17, 28, 1) 0%, rgba(19, 17, 28, 1) 46%, rgba(63, 103, 95, 1) 90%); */
+
+
+/* background: rgb(92, 47, 122);
+  background: linear-gradient(56deg, rgba(92, 47, 122, 1) 0%, rgba(19, 17, 28, 1) 31%, rgba(19, 17, 28, 1) 57%, rgba(63, 103, 95, 1) 100%);
+ */
+
+
+  background: rgb(76, 38, 102);
+    background: linear-gradient(56deg, rgba(76, 38, 102, 1) 0%, rgba(19, 17, 28, 1) 31%, rgba(19, 17, 28, 1) 57%, rgba(63, 103, 95, 1) 100%);
 
 }
 
