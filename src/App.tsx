@@ -25,14 +25,34 @@ import linkedin from './assets/images/linkedin1.jpg'
 import youtube from './assets/images/youtube.png' 
 import gmail from './assets/images/gmail.png'
 import { Form } from "./components/Form";
+import { ModelAnfisa } from "./components/ModelAnfisa";
 
 
 function App() {
   const [project1 , setProject1] = React.useState(false)
   const [project2 , setProject2] = React.useState(false)
   const [ingles, setIngles] = React.useState(true)  
+  const [modal1, setModal1] = React.useState(false)
   const style1 = 'flex flex-col'
   const style2 = 'hidden'
+
+
+  const openModal1 = ()=> {
+    setModal1(true)
+    document.body.style.overflow = 'hidden' ;
+  }
+
+  const closeModal1 = () => {
+    setModal1(false)
+    document.body.style.overflow = 'auto' ;    
+  }
+
+  const windowH = window.scrollY
+
+  const divBackground = {
+    top: `${Math.ceil(windowH)}px`
+  }
+  
 
 
   return (
@@ -44,7 +64,7 @@ function App() {
       <div className="w-[100%] flex flex-row justify-between items-center pb-8">
         <div className="flex flex-row gap-2 ">
           <div className="w-[50px] h-[50px] rounded-full bg-cover bg-no-repeat bg-center bg-[url(https://res.cloudinary.com/dbhtt5ozr/image/upload/v1684528398/IMG_8209wwwww_et2cfd.jpg)] "></div>
-          <p className="text-[30px] font-bold">Manuel Nácer</p>
+          <p className="text-[30px] font-bold">Manuel Nácer</p> 
         </div>
         <div className="flex gap-2">
           <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer">
@@ -74,9 +94,9 @@ function App() {
           <div className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] " onMouseEnter={()=>setProject1(true)} onMouseLeave={()=>setProject1(false)}>
             <p className="text-[25px] font-bold pb-2">Sales Tool for B2B Business</p>
             <div className={`${ project1 ? style1 : style2}`}>
-              <p className="text-[15px] font-normal ">Anfisa is a B2B cosmetics shop.  They grew the business to 80 orders per month just using WhatsApp as sales tool. When they reached 110 sales per month, the amount messages were unmanageable so we build this tool where the customers can make the order by themself and finish the purchase via WhatsApp using a sharable link of their order.  </p>
-              <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer">
-                <p>opcion  1</p> 
+              <p className="text-[17px] font-normal ">Anfisa is a B2B cosmetics shop. They grew the business to 80 orders per month just by using WhatsApp as a sales tool. When they reached 110 sales per month, the number of messages became unmanageable. Therefore, we built this tool where customers can place orders themselves and complete the purchase via WhatsApp using a shareable link of their order.</p>
+              <div className="bg-[#631c25] border border-[#a32c3c] rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer text-xl" onClick={()=> openModal1()}>
+                More 
               </div>   
             </div>
             <div className={`${ project1 ? style2 : style1}`}>
@@ -88,9 +108,9 @@ function App() {
           <div className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] " onMouseEnter={()=>setProject2(true)} onMouseLeave={()=>setProject2(false)}>
             <p className="text-[25px] font-bold pb-2">Sales Tool for B2B Business</p>
             <div className={`${ project2 ? style1 : style2}`}>
-              <p className="text-[15px] font-normal ">Anfisa is a B2B cosmetics shop.  They grew the business to 80 orders per month just using WhatsApp as sales tool. When they reached 110 sales per month, the amount messages were unmanageable so we build this tool where the customers can make the order by themself and finish the purchase via WhatsApp using a sharable link of their order.  </p>
-              <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer">
-                <p>opcion  1</p> 
+              <p className="text-[17px] font-normal ">Anfisa is a B2B cosmetics shop. They grew the business to 80 orders per month just by using WhatsApp as a sales tool. When they reached 110 sales per month, the number of messages became unmanageable. Therefore, we built this tool where customers can place orders themselves and complete the purchase via WhatsApp using a shareable link of their order.</p>
+              <div className="bg-[#631c25] border border-[#a32c3c] rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer text-xl" onClick={()=> openModal1()}>
+                More 
               </div>   
             </div>
             <div className={`${ project2 ? style2 : style1}`}>
@@ -222,22 +242,22 @@ function App() {
 
             <div className="flex flex-col justify-center items-start gap-3">
 
-                <a className="flex flex-row justify-center items-center gap-3  " href="https://github.com/nacermanuel">
+                <a className="flex flex-row justify-center items-center gap-3  " href="https://github.com/nacermanuel" target="_blank">
                   <img className="w-auto h-[2.5rem] rounded-full" src={gitflow} alt="git" />
                   <p>https://github.com/nacermanuel</p>
                 </a>
 
-                <a className="flex flex-row justify-center items-center gap-3  " href="https://www.linkedin.com/in/mfnacer/">
+                <a className="flex flex-row justify-center items-center gap-3  " href="https://www.linkedin.com/in/mfnacer/" target="_blank">
                   <img className="w-auto h-[2.5rem] rounded-lg" src={linkedin} alt="linkedin" />
                   <p>https://www.linkedin.com/in/mfnacer/</p>
                 </a>
 
-                <a className="flex flex-row justify-center items-center gap-3  " href="https://youtube.com/@bootcamp3rs">
+                <a className="flex flex-row justify-center items-center gap-3  " href="https://youtube.com/@bootcamp3rs" target="_blank">
                   <img className="w-auto h-[2rem]" src={youtube} alt="youtube" />
                   <p>https://youtube.com/@bootcamp3rs</p>
                 </a>
 
-                <a className="flex flex-row justify-center items-center gap-3  " href="mailto:nacermanuel@gmail.com">
+                <a className="flex flex-row justify-center items-center gap-3  " href="mailto:nacermanuel@gmail.com" target="_blank">
                   <img className="w-auto h-[2rem]" src={gmail} alt="git" />
                   <p>nacermanuel@gmail.com</p>
                 </a>
@@ -251,8 +271,12 @@ function App() {
 
         </div>
       </div>
-
+      
     </div>
+    { modal1 && <div className="w-[100%] h-[100%] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
+    { modal1 && <ModelAnfisa heigth={windowH} onclose={()=> closeModal1() }/>}
+
+
     </>
   )
 }
