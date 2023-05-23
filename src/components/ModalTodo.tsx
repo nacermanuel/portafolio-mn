@@ -134,9 +134,9 @@ export const ModalTodo = ( {heigth, onclose}: Props) => {
 
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;I used the <Tailwind/> framework and the MaterialUI components library to create a elegant UI.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;The backend was built with <Node/> using <Typescript/> and the <Express/> framework.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;The back-end was built with <Node/> using <Typescript/> and the <Express/> framework.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;A CRUD <Api/> was implemented to manage users and tasks. I utilized <Sequelize/> as the ORM and <Postgre/> cloud-based database provided by <Railway/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;A CRUD <Api/> was implemented to manage users and tasks. I utilized <Sequelize/> as ORM and <Postgre/> cloud-based database provided by <Railway/>.</li>
 
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;To handle responsibilities in a decoupled manner and facilitate easy modifications, I adopted a <CleanA/>.</li>
 

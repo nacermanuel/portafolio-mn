@@ -95,10 +95,10 @@ function AppEs({language}: Prop) {
 
       {/* SECCION 2 */}
       <div id="divSec2" className="bg-[#302b46] w-full rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] cursor-none max-[1024px]:w-[95%] max-[1024px]:px-2">
-        Hola, soy Manuel, desarrollador web full-stack. Adquirí mis habilidades a través de un riguroso bootcamp llamado SoyHenry y un extenso autoestudio, pero mi verdadera experiencia proviene de la construcción de mis propios proyectos. Mi pasión es aprovechar la tecnología para resolver problemas y mi objetivo es trabajar en una empresa que comparte esta visión.
+        Hola, soy Manuel, desarrollador web full-stack. Adquirí mis habilidades a través de un riguroso bootcamp llamado SoyHenry y muhco estudio autodidacta. Pero la verdadera experiencia la gané construyendo mis propios proyectos. Me apasiona la idea de utilizar la tecnología para resolver problemas, y mi objetivo es trabajar en una empresa que comparta esta visión.
         <br />
         <br />
-        Además de mis habilidades técnicas, he ocupado roles de liderazgo en la operación de negocios con ingresos anuales que superan los USD$100,000. Esta experiencia práctica me ha brindado una comprensión profunda de estrategias comerciales, experiencia en la ejecución de campañas publicitarias complejas de Facebook y una comprensión integral de las estructuras financieras dentro de las empresas. Sinergizo mis habilidades tecnológicas y experiencia comercial para aportar valor.
+        Además de mis habilidades técnicas, he ocupado roles de liderazgo en la operación de negocios con ingresos anuales que superan los USD$100,000. Esta experiencia práctica me ha brindado una comprensión profunda de estrategias comerciales, experiencia en la ejecución de campañas publicitarias complejas de Facebook y una comprensión integral de las estructuras financieras dentro de las empresas. Apalanco mis habilidades tecnológicas y mi experiencia de negocios para agregar valor.
       </div>
 
       {/* SECCION 3 */}

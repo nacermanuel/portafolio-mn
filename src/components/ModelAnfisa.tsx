@@ -121,9 +121,9 @@ export const ModelAnfisa = ( {heigth, onclose}: Props) => {
 
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;We used the <Tailwind/> framework and the daisyUI components library to create a great UI.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;The backend was built with <Node/> using <Typescript/> and the <Express/> framework.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;The back-end was built with <Node/> using <Typescript/> and the <Express/> framework.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;A CRUD <Api/> was implemented to manage products, brands, and categories. We utilized <Mongoose/> as the ORM and <Mongo/> Atlas as the cloud database.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;A CRUD <Api/> was implemented to manage products, brands, and categories. We utilized <Mongoose/> as ORM and <Mongo/> Atlas as cloud database.</li>
 
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;To handle responsibilities in a decoupled manner and facilitate easy modifications, we adopted a <CleanA/>.</li>
 

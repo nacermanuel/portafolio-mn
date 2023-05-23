@@ -121,7 +121,7 @@ export const ModelAnfisaES = ( {heigth, onclose}: Props) => {
 
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Usamos el framework <Tailwind/> y la librería de componentes daisyUI para crear un excelente interfaz de usuario.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;El backend se construyó con <Node/> usando <Typescript/> y el framework<Express/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;El back-end se construyó con <Node/> usando <Typescript/> y el framework<Express/>.</li>
 
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Se implementó un CRUD <Api/> para manejar productos, marcas y categorías. Utilizamos <Mongoose/> como ORM y <Mongo/>Atlas como base de datos en la nube.</li>
 

@@ -134,11 +134,11 @@ export const ModalTodoES = ( {heigth, onclose}: Props) => {
 
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Usé el framework <Tailwind/> framework y la librería de componentes MaterialUI para crear un interfaz de usuario elegante.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;El backend se construyó con <Node/> usando <Typescript/> y el framework<Express/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;El back-end se construyó con <Node/> usando <Typescript/> y el framework<Express/>.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Se implementó un CRUD <Api/> para manejar usuarios y tareas. Utilizamos <Sequelize/> como ORM y <Postgre/> como base de datos en la nube en <Railway/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Se implementó un CRUD <Api/> para manejar usuarios y tareas. Utilicé <Sequelize/> como ORM y <Postgre/> como base de datos en la nube en <Railway/>.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Para manejar las responsabilidades de manera desacoplada y facilitar futuras modificaciones, decidimos utilizar<CleanA/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Para manejar las responsabilidades de manera desacoplada y facilitar futuras modificaciones, decidí utilizar<CleanA/>.</li>
 
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Para el despliegue de front-end, estoy usando <Firebase/>.</li>
 
