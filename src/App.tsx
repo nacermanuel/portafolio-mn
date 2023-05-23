@@ -26,6 +26,8 @@ import youtube from './assets/images/youtube.png'
 import gmail from './assets/images/gmail.png'
 import { Form } from "./components/Form";
 import { ModelAnfisa } from "./components/ModelAnfisa";
+import TodoGit from './assets/todo.gif'
+import { ModalTodo } from "./components/ModalTodo";
 
 
 function App() {
@@ -33,7 +35,8 @@ function App() {
   const [project2 , setProject2] = React.useState(false)
   const [ingles, setIngles] = React.useState(true)  
   const [modal1, setModal1] = React.useState(false)
-  const style1 = 'flex flex-col'
+  const [modal2, setModal2] = React.useState(false)
+  const style1 = 'flex flex-col h-[33vh] justify-between'
   const style2 = 'hidden'
 
 
@@ -46,6 +49,16 @@ function App() {
     setModal1(false)
     document.body.style.overflow = 'auto' ;    
   }
+
+  const openModal2 = ()=> {
+    setModal2(true)
+    document.body.style.overflow = 'hidden' ;
+  }
+
+  const closeModal2 = () => {
+    setModal2(false)
+    document.body.style.overflow = 'auto' ;    
+  } 
 
   const windowH = window.scrollY
 
@@ -78,7 +91,7 @@ function App() {
 
       {/* SECCION 2 */}
       <div className="bg-[#302b46] w-full rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] cursor-none">
-        Hello, I'm Manuel, a full-stack software developer. I've acquired  my skills through a rigorous bootcamp called SoyHenry and extensive self-study, but my true expertise has come from building my own projects. My passion lies in leveraging technology as a problem solver, and my goal is to work within a company that shares this vision.
+        Hello, I'm Manuel, a full-stack web developer. I've acquired  my skills through a rigorous bootcamp called SoyHenry and extensive self-study, but my true expertise has come from building my own projects. My passion lies in leveraging technology as a problem solver, and my goal is to work within a company that shares this vision.
         <br />
         <br />
          In addition to my technical skills, I have held leading roles in the operation of businesses with annual revenue surpassing USD$100,000. This hands-on experience has given me a deep understanding of commercial strategies, expertise in running complex Facebook ads campaigns, and a comprehensive grasp of financial structures within businesses. I synergize my tech skills and business expertise to bring value to the table. 
@@ -90,12 +103,12 @@ function App() {
         <p className="text-[25px] font-bold pb-6">Projects &#128188;</p>
         <div className="flex flex-row w-full gap-4 justify-around items-center">
 
-          {/* CUADRO PROYECTO */}
+          {/* PROYECTO ANFISA */}
           <div className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] " onMouseEnter={()=>setProject1(true)} onMouseLeave={()=>setProject1(false)}>
             <p className="text-[25px] font-bold pb-2">Sales Tool for B2B Business</p>
             <div className={`${ project1 ? style1 : style2}`}>
               <p className="text-[17px] font-normal ">Anfisa is a B2B cosmetics shop. They grew the business to 80 orders per month just by using WhatsApp as a sales tool. When they reached 110 sales per month, the number of messages became unmanageable. Therefore, we built this tool where customers can place orders themselves and complete the purchase via WhatsApp using a shareable link of their order.</p>
-              <div className="bg-[#631c25] border border-[#a32c3c] rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer text-xl" onClick={()=> openModal1()}>
+              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal1()}>
                 More 
               </div>   
             </div>
@@ -104,17 +117,17 @@ function App() {
             </div>
           </div>
 
-          {/* CUADRO PROYECTO */}
+          {/* PROYECTO TASK TRACKER */}
           <div className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] " onMouseEnter={()=>setProject2(true)} onMouseLeave={()=>setProject2(false)}>
-            <p className="text-[25px] font-bold pb-2">Sales Tool for B2B Business</p>
+            <p className="text-[25px] font-bold pb-2">Visual Tool for Task Tracking</p>
             <div className={`${ project2 ? style1 : style2}`}>
-              <p className="text-[17px] font-normal ">Anfisa is a B2B cosmetics shop. They grew the business to 80 orders per month just by using WhatsApp as a sales tool. When they reached 110 sales per month, the number of messages became unmanageable. Therefore, we built this tool where customers can place orders themselves and complete the purchase via WhatsApp using a shareable link of their order.</p>
-              <div className="bg-[#631c25] border border-[#a32c3c] rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer text-xl" onClick={()=> openModal1()}>
+              <p className="text-[17px] font-normal ">As a software developer, I have learned that one of the most fundamental aspects when building complex products is how to organize the workflow. Many times, I have started projects but didn't finish them due to a lack of organization. That's why I built a tool to structure the workflow when developing any project.</p>
+              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal2()}>
                 More 
               </div>   
             </div>
             <div className={`${ project2 ? style2 : style1}`}>
-              <img className="rounded-md" src={AnfisaImage} alt="anfisa web" />
+              <img className="rounded-md" src={TodoGit} alt="anfisa web" />
             </div>
           </div>
           
@@ -276,6 +289,8 @@ function App() {
     { modal1 && <div className="w-[100%] h-[100%] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
     { modal1 && <ModelAnfisa heigth={windowH} onclose={()=> closeModal1() }/>}
 
+    { modal2 && <div className="w-[100%] h-[100%] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
+    { modal2 && <ModalTodo heigth={windowH} onclose={()=> closeModal2() }/>}
 
     </>
   )
