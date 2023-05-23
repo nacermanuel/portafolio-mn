@@ -71,26 +71,28 @@ function App() {
   return (
     <>
     
-    <div className="flex flex-col justify-center items-center pt-20">
+    <div id="divApp1" className="flex flex-col justify-center items-center pt-20">
 
       {/* SECCION 1 */}
-      <div className="w-[100%] flex flex-row justify-between items-center pb-8">
+      <div id="divSec1" className="w-[100%] flex flex-row justify-between items-center pb-8 max-[768px]:mx-4 max-[768px]:justify-evenly">
         <div className="flex flex-row gap-2 ">
           <div className="w-[50px] h-[50px] rounded-full bg-cover bg-no-repeat bg-center bg-[url(https://res.cloudinary.com/dbhtt5ozr/image/upload/v1684528398/IMG_8209wwwww_et2cfd.jpg)] "></div>
-          <p className="text-[30px] font-bold">Manuel Nácer</p> 
+          <p className="text-[30px] font-bold max-[768px]:text-[25px]">Manuel Nácer</p> 
         </div>
-        <div className="flex gap-2">
-          <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer">
-            <p>Resume &#128196;</p> 
+        <div className="flex gap-2 max-[768px]:flex-col-reverse">
+          <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer ">
+            <a href="https://drive.google.com/file/d/15lL-LTKQcHU_mC6gazOuYzg7KXYBj0gQ/view?usp=sharing" target="_blank">
+              <p className="text-white font-thin">Resume &#128196;</p> 
+            </a>
           </div>
           <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer" onClick={()=> setIngles(!ingles)}>
-            { !ingles ? <p>English&#128257;</p> : <p>Español&#128257;</p> }
+            { !ingles ? <p className="text-white font-thin">English&#128257;</p> : <p className="text-white font-thin">Español&#128257;</p> }
           </div>
         </div>
       </div>
 
       {/* SECCION 2 */}
-      <div className="bg-[#302b46] w-full rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] cursor-none">
+      <div id="divSec2" className="bg-[#302b46] w-full rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] cursor-none max-[768px]:w-[95%] max-[768px]:px-2">
         Hello, I'm Manuel, a full-stack web developer. I've acquired  my skills through a rigorous bootcamp called SoyHenry and extensive self-study, but my true expertise has come from building my own projects. My passion lies in leveraging technology as a problem solver, and my goal is to work within a company that shares this vision.
         <br />
         <br />
@@ -99,46 +101,47 @@ function App() {
 
       {/* SECCION 3 */}
 
-      <div className="pt-12 flex flex-col w-full">
+      <div id="divSec3" className="pt-12 flex flex-col w-full max-[768px]:w-[95%]">
         <p className="text-[25px] font-bold pb-6">Projects &#128188;</p>
-        <div className="flex flex-row w-full gap-4 justify-around items-center">
+        <div id="divSec3Proyectos" className="flex flex-row w-full gap-4 justify-around items-center max-[768px]:flex-col">
 
           {/* PROYECTO ANFISA */}
-          <div className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] " onMouseEnter={()=>setProject1(true)} onMouseLeave={()=>setProject1(false)}>
+          <div id="divSec3ProyectosAnfisa" className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[768px]:w-[100%] max-[768px]:min-w-[20rem] max-[768px]:px-2 max-[768px]:mb-4" onMouseEnter={()=>setProject1(true)} onMouseLeave={()=>setProject1(false)}>
             <p className="text-[25px] font-bold pb-2">Sales Tool for B2B Business</p>
-            <div className={`${ project1 ? style1 : style2}`}>
-              <p className="text-[17px] font-normal ">Anfisa is a B2B cosmetics shop. They grew the business to 80 orders per month just by using WhatsApp as a sales tool. When they reached 110 sales per month, the number of messages became unmanageable. Therefore, we built this tool where customers can place orders themselves and complete the purchase via WhatsApp using a shareable link of their order.</p>
+            <div className={`${ project1 ? style2 : style1} max-[768px]:h-auto max-[768px]:pb-4`}>
+              <img className="rounded-md" src={AnfisaImage} alt="anfisa web" />
+            </div>
+            <div className={`${ project1 ? style1 : style2} max-[768px]:flex max-[768px]:flex-col`}>
+              <p className="text-[17px] font-normal max-[768px]:pb-4">Anfisa is a B2B cosmetics shop. They grew the business to 80 orders per month just by using WhatsApp as a sales tool. When they reached 110 sales per month, the number of messages became unmanageable. Therefore, we built this tool where customers can place orders themselves and complete the purchase via WhatsApp using a shareable link of their order.</p>
               <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal1()}>
                 More 
               </div>   
             </div>
-            <div className={`${ project1 ? style2 : style1}`}>
-              <img className="rounded-md" src={AnfisaImage} alt="anfisa web" />
-            </div>
           </div>
 
           {/* PROYECTO TASK TRACKER */}
-          <div className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] " onMouseEnter={()=>setProject2(true)} onMouseLeave={()=>setProject2(false)}>
+          <div id="divSec3ProyectosTodo" className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[768px]:w-[100%] max-[768px]:min-w-[20rem] max-[768px]:px-2" onMouseEnter={()=>setProject2(true)} onMouseLeave={()=>setProject2(false)}>
             <p className="text-[25px] font-bold pb-2">Visual Tool for Task Tracking</p>
-            <div className={`${ project2 ? style1 : style2}`}>
-              <p className="text-[17px] font-normal ">As a software developer, I have learned that one of the most fundamental aspects when building complex products is how to organize the workflow. Many times, I have started projects but didn't finish them due to a lack of organization. That's why I built a tool to structure the workflow when developing any project.</p>
+            <div className={`${ project2 ? style2 : style1}  max-[768px]:h-auto max-[768px]:pb-4`}>
+              <img className="rounded-md" src={TodoGit} alt="todo app gif" />
+            </div>            
+            <div className={`${ project2 ? style1 : style2} max-[768px]:flex max-[768px]:flex-col`}>
+              <p className="text-[17px] font-normal max-[768px]:pb-4">As a software developer, I have learned that one of the most fundamental aspects when building complex products is how to organize the workflow. Many times, I have started projects but didn't finish them due to a lack of organization. That's why I built a tool to structure the workflow when developing any project.</p>
               <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal2()}>
                 More 
               </div>   
             </div>
-            <div className={`${ project2 ? style2 : style1}`}>
-              <img className="rounded-md" src={TodoGit} alt="anfisa web" />
-            </div>
+
           </div>
           
         </div>
       </div>
 
       {/* SECCION 4 */}
-      <div className="pt-12 flex flex-col w-full">
+      <div id="divSec4" className="pt-12 flex flex-col w-full max-[768px]:w-[95%]">
         <p className="text-[25px] font-bold pb-6">Technologies &#128104;&#8205;&#128187;</p>
 
-        <div className="flex flex-row gap-3 pb-3">
+        <div className="flex flex-row gap-3 pb-3 max-[768px]:flex-wrap">
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
             <img className="w-auto h-[1.5rem]" src={typescript} alt="typescript" /> <p>TypeScript</p> 
@@ -162,7 +165,7 @@ function App() {
 
         </div>
 
-        <div className="flex flex-row gap-3 pb-3">
+        <div className="flex flex-row gap-3 pb-3 max-[768px]:flex-wrap">
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
             <img className="w-auto h-[1.5rem]" src={nodejs} alt="nodejs" /> <p>Node JS</p> 
@@ -186,7 +189,7 @@ function App() {
 
         </div>   
 
-        <div className="flex flex-row gap-3 pb-3">
+        <div className="flex flex-row gap-3 pb-3 max-[768px]:flex-wrap">
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
             <img className="w-auto h-[1.5rem]" src={api} alt="API" /> <p>Rest API</p> 
@@ -213,10 +216,10 @@ function App() {
       </div>
 
       {/* SECCION 5 */}
-      <div className="pt-2 flex flex-col w-full">
+      <div id="divSec5" className="pt-2 flex flex-col w-full max-[768px]:w-[95%]">
         <p className="text-[25px] font-bold pb-6">Others</p>
 
-        <div className="flex flex-row gap-3 pb-3">
+        <div className="flex flex-row gap-3 pb-3 max-[768px]:flex-wrap">
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
             <img className="w-auto h-[1.5rem]" src={git} alt="git" /> <p>Git</p> 
@@ -247,10 +250,10 @@ function App() {
       </div>
 
       {/* SECCION 6 */}
-      <div className="pt-12 flex flex-col w-full">
+      <div id="divSec6" className="pt-12 flex flex-col w-full max-[768px]:w-[95%]">
         <p className="text-[25px] font-bold pb-6">Contact &#128236;</p>
-        <div className="flex flex-row gap-3 pb-3">
-          <div className="w-[50%]">
+        <div className="flex flex-row gap-3 pb-3 max-[768px]:flex-col">
+          <div className="w-[50%] max-[768px]:w-[100%]">
             <p className="pb-3">Let's build something! Contact me:</p>
 
             <div className="flex flex-col justify-center items-start gap-3">
@@ -278,7 +281,7 @@ function App() {
             </div>
           </div>
 
-          <div className="w-[50%]">
+          <div className="w-[50%] max-[768px]:w-[100%]">
             <Form/>
           </div>
 
