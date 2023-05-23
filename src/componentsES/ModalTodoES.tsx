@@ -118,7 +118,7 @@ const Firebase = () => {
 
 
 
-export const ModalTodo = ( {heigth, onclose}: Props) => {
+export const ModalTodoES = ( {heigth, onclose}: Props) => {
 
     const windowH = {
         top: `${Math.ceil(heigth + 40)}px`
@@ -130,30 +130,30 @@ export const ModalTodo = ( {heigth, onclose}: Props) => {
         <p className="text-[25px] font-bold pb-2 text-white max-[1024px]:text-[18px] max-[1024px]:mt-5">Visual Tool for Task Tracking</p>  
    
         <ul className=' max-[1024px]:overflow-auto'>
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989; This is <React/> web application. Since, there will be a lot of interaction and manipulation of `tasks` I decided to manage a global state using <Redux/>. </li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989; Esta es una aplicación web <React/>. Dado que habrá mucha interacción y manipulación de `tareas`, decidí administrar un estado global usando <Redux/>. </li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;I used the <Tailwind/> framework and the MaterialUI components library to create a elegant UI.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Usé el framework <Tailwind/> framework y la librería de componentes MaterialUI para crear un interfaz de usuario elegante.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;The backend was built with <Node/> using <Typescript/> and the <Express/> framework.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;El backend se construyó con <Node/> usando <Typescript/> y el framework<Express/>.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;A CRUD <Api/> was implemented to manage users and tasks. I utilized <Sequelize/> as the ORM and <Postgre/> cloud-based database provided by <Railway/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Se implementó un CRUD <Api/> para manejar usuarios y tareas. Utilizamos <Sequelize/> como ORM y <Postgre/> como base de datos en la nube en <Railway/>.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;To handle responsibilities in a decoupled manner and facilitate easy modifications, I adopted a <CleanA/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Para manejar las responsabilidades de manera desacoplada y facilitar futuras modificaciones, decidimos utilizar<CleanA/>.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;For front-end deployment, I am using <Firebase/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Para el despliegue de front-end, estoy usando <Firebase/>.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;For back-end deployment, I have opted for <Railway/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Para el despliegue de back-end, elegí <Railway/>.</li>
         </ul>
         <div className="flex flex-row pt-3 w-full justify-around items-center max-[1024px]:items-center max-[1024px]:h-[9vh] max-[1024px]:py-2">
           <a className="flex justify-center items-center w-full max-[1024px]:h-full" href="https://todoapp-pern.web.app/" target="_blank">
           <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl text-white text-center w-[50%] h-auto py-2 max-[1024px]:h-[90%] max-[1024px]:w-[90%] max-[1024px]:text-sm">
-             &#128187; Web Site &#128187;
+             &#128187; Ver Web &#128187;
           </div> 
           </a>
  
           <a className="flex justify-center items-center w-full max-[1024px]:h-full" href="https://github.com/nacermanuel/pern-todoapp-typescript" target="_blank">
           <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl text-white text-center w-[50%] h-auto py-2 max-[1024px]:h-[90%] max-[1024px]:w-[90%] max-[1024px]:text-sm">
-             &#128373; Source Code &#128373;
+             &#128373; Ver Repositorio &#128373;
           </div> 
           </a>
         </div>

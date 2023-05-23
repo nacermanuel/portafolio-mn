@@ -105,7 +105,7 @@ const Railway = () => {
   )
 }
 
-export const ModelAnfisa = ( {heigth, onclose}: Props) => {
+export const ModelAnfisaES = ( {heigth, onclose}: Props) => {
 
     const windowH = {
         top: `${Math.ceil(heigth + 40)}px`
@@ -117,30 +117,30 @@ export const ModelAnfisa = ( {heigth, onclose}: Props) => {
         <p className="text-[25px] font-bold pb-2 text-white max-[1024px]:text-[18px] max-[1024px]:mt-5">Anfisa - B2B cosmetics shop</p>  
    
         <ul className=' max-[1024px]:overflow-auto'>
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;This is a <NextJS/> web application developed using <Typescript/>. Since it's a multi-brand and multi-product catalog, we decided to use Next.js so we can build a mix of SSR and CSR components, allowing for optimized search engine indexing.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Esta es una aplicación web <NextJS/> desarrollada con <Typescript/>. Al ser un catálogo multi-marca y multi-producto, Next.js permite crear una combinación de componentes SSR y CSR, lo que da una indexación optimizada en motores de búsqueda.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;We used the <Tailwind/> framework and the daisyUI components library to create a great UI.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Usamos el framework <Tailwind/> y la librería de componentes daisyUI para crear un excelente interfaz de usuario.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;The backend was built with <Node/> using <Typescript/> and the <Express/> framework.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;El backend se construyó con <Node/> usando <Typescript/> y el framework<Express/>.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;A CRUD <Api/> was implemented to manage products, brands, and categories. We utilized <Mongoose/> as the ORM and <Mongo/> Atlas as the cloud database.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Se implementó un CRUD <Api/> para manejar productos, marcas y categorías. Utilizamos <Mongoose/> como ORM y <Mongo/>Atlas como base de datos en la nube.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;To handle responsibilities in a decoupled manner and facilitate easy modifications, we adopted a <CleanA/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Para manejar las responsabilidades de manera desacoplada y facilitar futuras modificaciones, decidí utilizar<CleanA/>.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;For front-end deployment, we are using <Vercel/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Para el despliegue de front-end, estamos usando <Vercel/>.</li>
 
-          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;For back-end deployment, we have opted for <Railway/>.</li>
+          <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Para el despliegue de back-end, hemos elegido <Railway/>.</li>
         </ul>
         <div id='divBotones' className="flex flex-row pt-3 w-full justify-around items-center max-[1024px]:items-center max-[1024px]:h-[9vh] max-[1024px]:py-2">
           <a className="flex justify-center items-center w-full max-[1024px]:h-full" href="https://anfisa.vercel.app/" target="_blank">
           <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl text-white text-center w-[50%] h-auto py-2 max-[1024px]:h-[90%] max-[1024px]:w-[90%] max-[1024px]:text-sm">
-             &#128187; Web Site &#128187;
+             &#128187; Ver Web &#128187;
           </div> 
           </a>
  
           <a className="flex justify-center items-center w-full max-[1024px]:h-full" href="https://github.com/LuisAlomia/anfisa" target="_blank">
           <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl text-white text-center w-[50%] h-auto py-2 max-[1024px]:h-[90%] max-[1024px]:w-[90%] max-[1024px]:text-sm">
-             &#128373; Source Code &#128373;
+             &#128373; Ver Repositorio &#128373;
           </div> 
           </a>
         </div>
