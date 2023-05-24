@@ -44,7 +44,7 @@ const Tailwind = () => {
 const Node = () => {
   return (
     <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] inline-flex gap-2 max-[1024px]:scale-[0.8]">
-      <img className="w-auto h-[1.5rem]" src={nodejs} alt="nodejs" /> <p>Node JS</p> 
+      <img className="w-auto h-[1.5rem]" src={nodejs} alt="nodejs" /> <p>NodeJS</p> 
     </div>  
   )
 }
@@ -112,11 +112,11 @@ export const ModelAnfisa = ( {heigth, onclose}: Props) => {
     }
     
   return (
-    <div id='divModalAnfisa' className={`bg-gradient-to-b from-[#365852] from-10% via-[#422457] via-100%  text-slate-800 absolute w-[80%] h-[85%] left-[10%] rounded-lg border border-white flex flex-col justify-center items-center px-7 max-[1024px]:w-[90%] max-[1024px]:left-[5%] max-[1024px]:px-2 max-[1024px]:h-[90vh]`} style={windowH}>
-        <button className="absolute top-0 right-0 mr-2 mt-2 max-[1024px]:px-[4px] max-[1024px]:py-[1px] " onClick={onclose}>x</button> 
+    <div id='divModalAnfisa' className={`bg-gradient-to-b from-[#365852] from-10% via-[#422457] via-100%  text-slate-800 absolute w-[80%] h-[85%] left-[10%] rounded-lg border border-white flex flex-col justify-center items-center px-7 max-[1024px]:w-[90%] max-[1024px]:left-[5%] max-[1024px]:px-2 max-[1024px]:h-[80vh]`} style={windowH}>
+        <p className="absolute top-0 right-0 mr-2 mt-2 text-white font-bold cursor-pointer text-xl border border-[#ffffff] rounded-lg text-center px-2 max-[1024px]:px-[4px] " onClick={onclose}>x</p> 
         <p className="text-[25px] font-bold pb-2 text-white max-[1024px]:text-[18px] max-[1024px]:mt-5">Anfisa - B2B cosmetics shop</p>  
    
-        <ul className=' max-[1024px]:overflow-auto'>
+        <ul className='overflow-auto max-[1024px]:overflow-auto'>
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;This is a <NextJS/> web application developed using <Typescript/>. Since it's a multi-brand and multi-product catalog, we decided to use Next.js so we can build a mix of SSR and CSR components, allowing for optimized search engine indexing.</li>
 
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;We used the <Tailwind/> framework and the daisyUI components library to create a great UI.</li>

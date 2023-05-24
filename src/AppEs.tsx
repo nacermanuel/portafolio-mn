@@ -28,6 +28,7 @@ import TodoGit from './assets/todo.gif'
 import { FormES } from "./componentsES/FormES";
 import { ModelAnfisaES } from "./componentsES/ModelAnfisaES";
 import { ModalTodoES } from "./componentsES/ModalTodoES";
+import mn from './assets/manuel.jpg'
 
 interface Prop{
     language: any
@@ -38,7 +39,7 @@ function AppEs({language}: Prop) {
   const [project2 , setProject2] = React.useState(false)
   const [modal1, setModal1] = React.useState(false)
   const [modal2, setModal2] = React.useState(false)
-  const style1 = 'flex flex-col h-[33vh] justify-between'
+  const style1 = 'flex flex-col h-auto justify-between'
   const style2 = 'hidden'
 
 
@@ -78,12 +79,12 @@ function AppEs({language}: Prop) {
       {/* SECCION 1 */}
       <div id="divSec1" className="w-[100%] flex flex-row justify-between items-center pb-8 max-[1024px]:mx-4 max-[1024px]:justify-evenly">
         <div className="flex flex-row gap-2 ">
-          <div className="w-[50px] h-[50px] rounded-full bg-cover bg-no-repeat bg-center bg-[url(https://res.cloudinary.com/dbhtt5ozr/image/upload/v1684528398/IMG_8209wwwww_et2cfd.jpg)] "></div>
+          <div className={`w-[50px] h-[50px] rounded-full bg-cover bg-no-repeat bg-center`} style={{ backgroundImage: `url(${mn})` }}></div>
           <p className="text-[30px] font-bold max-[1024px]:text-[25px]">Manuel Nácer</p> 
         </div>
         <div className="flex gap-2 max-[1024px]:flex-col-reverse">
           <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer ">
-            <a href="https://drive.google.com/file/d/15lL-LTKQcHU_mC6gazOuYzg7KXYBj0gQ/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/file/d/1wdIphjb8smivPWg1W7oWOFpm_hBEDLEk/view?usp=sharing" target="_blank">
               <p className="text-white font-thin">Curriculum &#128196;</p> 
             </a>
           </div>
@@ -95,7 +96,7 @@ function AppEs({language}: Prop) {
 
       {/* SECCION 2 */}
       <div id="divSec2" className="bg-[#302b46] w-full rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] cursor-none max-[1024px]:w-[95%] max-[1024px]:px-2">
-        Hola, soy Manuel, desarrollador web full-stack. Adquirí mis habilidades a través de un riguroso bootcamp llamado SoyHenry y muhco estudio autodidacta. Pero la verdadera experiencia la gané construyendo mis propios proyectos. Me apasiona la idea de utilizar la tecnología para resolver problemas, y mi objetivo es trabajar en una empresa que comparta esta visión.
+        Hola, soy Manuel, desarrollador web full-stack. Adquirí mis habilidades a través de un riguroso bootcamp llamado SoyHenry y mucho estudio autodidacta. Pero la verdadera experiencia la gané construyendo mis propios proyectos. Me apasiona la idea de utilizar la tecnología para resolver problemas, y mi objetivo es trabajar en una empresa que comparta esta visión.
         <br />
         <br />
         Además de mis habilidades técnicas, he ocupado roles de liderazgo en la operación de negocios con ingresos anuales que superan los USD$100,000. Esta experiencia práctica me ha brindado una comprensión profunda de estrategias comerciales, experiencia en la ejecución de campañas publicitarias complejas de Facebook y una comprensión integral de las estructuras financieras dentro de las empresas. Apalanco mis habilidades tecnológicas y mi experiencia de negocios para agregar valor.
@@ -108,7 +109,7 @@ function AppEs({language}: Prop) {
         <div id="divSec3Proyectos" className="flex flex-row w-full gap-4 justify-around items-center max-[1024px]:flex-col">
 
           {/* PROYECTO ANFISA */}
-          <div id="divSec3ProyectosAnfisa" className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[100%] max-[1024px]:min-w-[20rem] max-[1024px]:px-2 max-[1024px]:mb-4" onMouseEnter={()=>setProject1(true)} onMouseLeave={()=>setProject1(false)}>
+          <div id="divSec3ProyectosAnfisa" className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] h-auto rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[100%] max-[1024px]:min-w-[20rem] max-[1024px]:px-2 max-[1024px]:mb-4" onMouseEnter={()=>setProject1(true)} onMouseLeave={()=>setProject1(false)}>
             <p className="text-[19px] font-bold pb-2">Herramienta de Ventas para Negocios B2B</p>
             <div className={`${ project1 ? style2 : style1} max-[1024px]:h-auto max-[1024px]:pb-4 max-[1024px]:flex max-[1024px]:flex-col`}>
               <img className="rounded-md" src={AnfisaImage} alt="anfisa web" />
@@ -122,7 +123,7 @@ function AppEs({language}: Prop) {
           </div>
 
           {/* PROYECTO TASK TRACKER */}
-          <div id="divSec3ProyectosTodo" className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[100%] max-[1024px]:min-w-[20rem] max-[1024px]:px-2" onMouseEnter={()=>setProject2(true)} onMouseLeave={()=>setProject2(false)}>
+          <div id="divSec3ProyectosTodo" className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] h-auto rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[100%] max-[1024px]:min-w-[20rem] max-[1024px]:px-2" onMouseEnter={()=>setProject2(true)} onMouseLeave={()=>setProject2(false)}>
             <p className="text-[19px] font-bold pb-2">Herramienta visual para seguimiento de tareas</p>
             <div className={`${ project2 ? style2 : style1}  max-[1024px]:h-auto max-[1024px]:pb-4 max-[1024px]:flex max-[1024px]:flex-col`}>
               <img className="rounded-md" src={TodoGit} alt="todo app gif" />
@@ -291,10 +292,10 @@ function AppEs({language}: Prop) {
       </div>
       
     </div>
-    { modal1 && <div className="w-[100%] h-[100%] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
+    { modal1 && <div className="w-[100%] h-[120vh] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
     { modal1 && <ModelAnfisaES heigth={windowH} onclose={()=> closeModal1() }/>}
 
-    { modal2 && <div className="w-[100%] h-[100%] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
+    { modal2 && <div className="w-[100%] h-[120vh] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
     { modal2 && <ModalTodoES heigth={windowH} onclose={()=> closeModal2() }/>}
 
     </>

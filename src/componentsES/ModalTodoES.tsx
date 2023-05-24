@@ -52,7 +52,7 @@ const Tailwind = () => {
 const Node = () => {
   return (
     <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] inline-flex gap-2 max-[1024px]:scale-[0.8]">
-      <img className="w-auto h-[1.5rem]" src={nodejs} alt="nodejs" /> <p>Node JS</p> 
+      <img className="w-auto h-[1.5rem]" src={nodejs} alt="nodejs" /> <p>NodeJS</p> 
     </div>  
   )
 }
@@ -125,11 +125,11 @@ export const ModalTodoES = ( {heigth, onclose}: Props) => {
     }
     
   return (
-    <div className={`bg-gradient-to-b from-[#365852] from-10% via-[#422457] via-100%  text-slate-800 absolute w-[80%] h-[85%] left-[10%] rounded-lg border border-white flex flex-col justify-center items-center px-7 max-[1024px]:w-[90%] max-[1024px]:left-[5%] max-[1024px]:px-2 max-[1024px]:h-[90vh]`} style={windowH}>
-        <button className="absolute top-0 right-0 mr-2 mt-2 max-[1024px]:px-[4px] max-[1024px]:py-[1px]" onClick={onclose}>x</button> 
-        <p className="text-[25px] font-bold pb-2 text-white max-[1024px]:text-[18px] max-[1024px]:mt-5">Visual Tool for Task Tracking</p>  
+    <div className={`bg-gradient-to-b from-[#365852] from-10% via-[#422457] via-100%  text-slate-800 absolute w-[80%] h-[85%] left-[10%] rounded-lg border border-white flex flex-col justify-center items-center px-7 max-[1024px]:w-[90%] max-[1024px]:left-[5%] max-[1024px]:px-2 max-[1024px]:h-[80vh]`} style={windowH}>
+        <p className="absolute top-0 right-0 mr-2 mt-2 text-white font-bold cursor-pointer text-xl border border-[#ffffff] rounded-lg text-center px-2 max-[1024px]:px-[4px] " onClick={onclose}>x</p> 
+        <p className="text-[25px] font-bold pb-2 text-white max-[1024px]:text-[18px] max-[1024px]:mt-5">Herramienta de Organización</p>  
    
-        <ul className=' max-[1024px]:overflow-auto'>
+        <ul className='overflow-auto max-[1024px]:overflow-auto'>
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989; Esta es una aplicación web <React/>. Dado que habrá mucha interacción y manipulación de `tareas`, decidí administrar un estado global usando <Redux/>. </li>
 
           <li className="font-semibold text-start text-white py-2 max-[1024px]:py-0">&#9989;Usé el framework <Tailwind/> framework y la librería de componentes MaterialUI para crear un interfaz de usuario elegante.</li>
@@ -152,7 +152,7 @@ export const ModalTodoES = ( {heigth, onclose}: Props) => {
           </a>
  
           <a className="flex justify-center items-center w-full max-[1024px]:h-full" href="https://github.com/nacermanuel/pern-todoapp-typescript" target="_blank">
-          <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl text-white text-center w-[50%] h-auto py-2 max-[1024px]:h-[90%] max-[1024px]:w-[90%] max-[1024px]:text-sm">
+          <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl text-white text-center w-[50%] h-auto py-2 max-[1024px]:h-[90%] max-[1024px]:w-[90%] max-[1024px]:text-xs">
              &#128373; Ver Repositorio &#128373;
           </div> 
           </a>
