@@ -1,12 +1,14 @@
-import React from 'react'
-import AppEn from './AppEn.tsx'
-import AppEs from './AppEs.tsx'
 
-export const App = () => {
-    const [lang, setLang] = React.useState(true)
+import { Routes, Route } from 'react-router-dom'
+import { Home } from './Home'
+import { Mock } from './mock/Mock'
+
+
+export default function App() {
   return (
-
-    lang ? <AppEn language={()=> setLang(!lang)}/> : <AppEs language={()=> setLang(!lang)}/>
-
+    <Routes>
+        <Route path='/' element={ <Home/>}/>
+        <Route path='/mock' element={ <Mock/>}/>
+    </Routes>
   )
 }
