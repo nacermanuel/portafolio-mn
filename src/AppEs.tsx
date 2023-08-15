@@ -24,7 +24,12 @@ import clean from './assets/images/clean.png'
 import linkedin from './assets/images/linkedin1.jpg'
 import youtube from './assets/images/youtube.png' 
 import gmail from './assets/images/gmail.png'
+import wordpress from './assets/images/wordpress.png'
+import figma from './assets/images/figma.png'
+import shopify from './assets/images/shopify.png'
 import TodoGit from './assets/todo.gif'
+import drrosy from './assets/images/drrosy.gif'
+import upwork from './assets/images/upwork.png'
 import { FormES } from "./componentsES/FormES";
 import { ModelAnfisaES } from "./componentsES/ModelAnfisaES";
 import { ModalTodoES } from "./componentsES/ModalTodoES";
@@ -37,10 +42,11 @@ interface Prop{
 function AppEs({language}: Prop) {
   const [project1 , setProject1] = React.useState(false)
   const [project2 , setProject2] = React.useState(false)
+  const [project3 , setProject3] = React.useState(false)
+  const [project4 , setProject4] = React.useState(false)    
   const [modal1, setModal1] = React.useState(false)
   const [modal2, setModal2] = React.useState(false)
-  const style1 = 'flex flex-col h-auto justify-between'
-  const style2 = 'hidden'
+
 
 
   const openModal1 = ()=> {
@@ -95,7 +101,7 @@ function AppEs({language}: Prop) {
       </div>
 
       {/* SECCION 2 */}
-      <div id="divSec2" className="bg-[#302b46] w-full rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] cursor-none max-[1024px]:w-[95%] max-[1024px]:px-2">
+      <div id="divSec2" className="bg-[#302b46] w-full rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[95%] max-[1024px]:px-2">
         Hola, soy Manuel, desarrollador web full-stack. Adquirí mis habilidades a través de un riguroso bootcamp llamado SoyHenry y mucho estudio autodidacta. Pero la verdadera experiencia la gané construyendo mis propios proyectos. Me apasiona la idea de utilizar la tecnología para resolver problemas, y mi objetivo es trabajar en proyectos que alineen a esta visión.
         <br />
         <br />
@@ -104,40 +110,73 @@ function AppEs({language}: Prop) {
 
       {/* SECCION 3 */}
 
-      <div id="divSec3" className="pt-12 flex flex-col w-full max-[1024px]:w-[95%]">
-        <p className="text-[25px] font-bold pb-6">Proyectos &#128188;</p>
+      <div id="divSec3" className="pt-12 flex flex-col gap-6 w-full max-[1024px]:w-[95%]">
+        <p className="text-[25px] font-bold pb-6">Proyectos 2023 &#128188;</p>
         <div id="divSec3Proyectos" className="flex flex-row w-full gap-4 justify-around items-center max-[1024px]:flex-col">
 
           {/* PROYECTO ANFISA */}
           <div id="divSec3ProyectosAnfisa" className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] h-auto rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[100%] max-[1024px]:min-w-[20rem] max-[1024px]:px-2 max-[1024px]:mb-4" onMouseEnter={()=>setProject1(true)} onMouseLeave={()=>setProject1(false)}>
-            <p className="text-[19px] font-bold pb-2">Herramienta de Ventas para Negocios B2B</p>
-            <div className={`${ project1 ? style2 : style1} max-[1024px]:h-auto max-[1024px]:pb-4 max-[1024px]:flex max-[1024px]:flex-col`}>
+            <p className="text-[19px] font-bold pb-2">Web App: Catálogo de Ventas</p>
+            <div className={`${ project1 ? 'hidden' : 'flex flex-col h-auto justify-between'} max-[1024px]:h-auto max-[1024px]:pb-4 max-[1024px]:flex max-[1024px]:flex-col`}>
               <img className="rounded-md" src={AnfisaImage} alt="anfisa web" />
             </div>
-            <div className={`${ project1 ? style1 : style2} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
+            <div className={`${ project1 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
               <p className="text-[17px] font-normal max-[1024px]:pb-4">Anfisa es una tienda de cosmética B2B. Crecieron el negocio a 80 pedidos por mes usando  WhatsApp como herramienta de ventas. Cuando llegaron a las 110 ventas por mes, la cantidad de mensajes se volvió inmanejable. Por lo tanto, creamos esta herramienta en la que los clientes pueden realizar pedidos por sí mismos y completar la compra a través de WhatsApp utilizando un enlace para compartir de su pedido.</p>
               <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal1()}>
-                Ver Más 
+                Ver cómo lo desarrollé 
               </div>   
             </div>
           </div>
 
           {/* PROYECTO TASK TRACKER */}
           <div id="divSec3ProyectosTodo" className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] h-auto rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[100%] max-[1024px]:min-w-[20rem] max-[1024px]:px-2" onMouseEnter={()=>setProject2(true)} onMouseLeave={()=>setProject2(false)}>
-            <p className="text-[19px] font-bold pb-2">Herramienta visual para seguimiento de tareas</p>
-            <div className={`${ project2 ? style2 : style1}  max-[1024px]:h-auto max-[1024px]:pb-4 max-[1024px]:flex max-[1024px]:flex-col`}>
+            <p className="text-[19px] font-bold pb-2">Web App: Control de Productividad</p>
+            <div className={`${ project2 ? 'hidden' : 'flex flex-col h-auto justify-between'}  max-[1024px]:h-auto max-[1024px]:pb-4 max-[1024px]:flex max-[1024px]:flex-col`}>
               <img className="rounded-md" src={TodoGit} alt="todo app gif" />
             </div>            
-            <div className={`${ project2 ? style1 : style2} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
+            <div className={`${ project2 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
               <p className="text-[17px] font-normal max-[1024px]:pb-4">Como desarrollador de software, aprendí que uno de los aspectos más fundamentales al crear productos complejos, es cómo organizar el flujo de trabajo. Muchas veces comencé proyectos pero no los terminé por falta de organización. Es por eso que construí una herramienta para estructurar el flujo de trabajo al desarrollar cualquier proyecto.</p>
               <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal2()}>
-                Ver Más 
+                Ver cómo lo desarrollé 
               </div>   
             </div>
-
           </div>
           
         </div>
+
+        <div id="divSec3Proyectos" className="flex flex-row w-full gap-4 justify-around items-center max-[1024px]:flex-col">
+
+          {/* PROYECTO DR ROSY */}
+          <div id="divSec3ProyectosAnfisa" className=" bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] h-auto rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[100%] max-[1024px]:min-w-[20rem] max-[1024px]:px-2 max-[1024px]:mb-4" onMouseEnter={()=>setProject3(true)} onMouseLeave={()=>setProject3(false)}>
+            <p className="text-[19px] font-bold pb-2">Página de empresa en WordPress</p>
+            <div className={`${ project3 ? 'hidden' : 'flex flex-col h-auto justify-between'} max-[1024px]:h-auto max-[1024px]:pb-4 max-[1024px]:flex max-[1024px]:flex-col`}>
+              <img className="rounded-md" src={drrosy} alt="anfisa web" />
+            </div>
+            <div className={`${ project3 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
+              <p className="text-[17px] font-normal max-[1024px]:pb-4">Rosy Sandhu, M.D., is a board-certified internal medicine specialist and the founding director of Neem Medical Spa, Boston’s premier wellness destination. We have built a beautiful WordPress site to enhance Dr. Sandhu's online presence. Through blog posts and email marketing, Dr. Sandhu will be able to reach a broader audience, thus having a positive impact on her business.</p>
+              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal1()}>
+                Ver cómo lo desarrollé 
+              </div>   
+            </div>
+          </div>
+
+          {/* PROYECTO DESENIO */}
+          <div id="divSec3ProyectosTodo" className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] h-auto rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[100%] max-[1024px]:min-w-[20rem] max-[1024px]:px-2" onMouseEnter={()=>setProject4(true)} onMouseLeave={()=>setProject4(false)}>
+            <p className="text-[19px] font-bold pb-2">Web App: Control de Productividad</p>
+            <div className={`${ project4 ? 'hidden' : 'flex flex-col h-auto justify-between'}  max-[1024px]:h-auto max-[1024px]:pb-4 max-[1024px]:flex max-[1024px]:flex-col`}>
+              <img className="rounded-md" src={TodoGit} alt="todo app gif" />
+            </div>            
+            <div className={`${ project4 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
+              <p className="text-[17px] font-normal max-[1024px]:pb-4">As a software developer, I have learned that one of the most fundamental aspects when building complex products is how to organize the workflow. Many times, I have started projects but didn't finish them due to a lack of organization. That's why I built a tool to structure the workflow when developing any project.</p>
+              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal2()}>
+                Ver cómo lo desarrollé 
+              </div>   
+            </div>
+          </div>
+          
+        </div>
+
+
       </div>
 
       {/* SECCION 4 */}
@@ -225,6 +264,24 @@ function AppEs({language}: Prop) {
         <div className="flex flex-row gap-3 pb-3 max-[1024px]:flex-wrap">
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={wordpress} alt="git" /> <p>WordPress</p> 
+          </div>   
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={shopify} alt="gitflow" /> <p>Shopify</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={figma} alt="railway" /> <p>Figma</p> 
+          </div>  
+
+
+        </div>
+
+
+        <div className="flex flex-row gap-3 pb-3 max-[1024px]:flex-wrap">
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
             <img className="w-auto h-[1.5rem]" src={git} alt="git" /> <p>Git</p> 
           </div>   
 
@@ -261,15 +318,20 @@ function AppEs({language}: Prop) {
 
             <div className="flex flex-col justify-center items-start gap-3">
 
+                <a className="flex flex-row justify-center items-center gap-3  " href="https://www.linkedin.com/in/mfnacer/" target="_blank">
+                  <img className="w-auto h-[2.5rem] rounded-lg" src={linkedin} alt="linkedin" />
+                  <p>https://www.linkedin.com/in/mfnacer/</p>
+                </a>
+
                 <a className="flex flex-row justify-center items-center gap-3  " href="https://github.com/nacermanuel" target="_blank">
                   <img className="w-auto h-[2.5rem] rounded-full" src={gitflow} alt="git" />
                   <p>https://github.com/nacermanuel</p>
                 </a>
 
-                <a className="flex flex-row justify-center items-center gap-3  " href="https://www.linkedin.com/in/mfnacer/" target="_blank">
-                  <img className="w-auto h-[2.5rem] rounded-lg" src={linkedin} alt="linkedin" />
-                  <p>https://www.linkedin.com/in/mfnacer/</p>
-                </a>
+                <a className="flex flex-row justify-center items-center gap-3  " href="https://www.upwork.com/freelancers/mnacer" target="_blank">
+                  <img className="w-auto h-[2.5rem] rounded-lg" src={upwork} alt="upwork" />
+                  <p>https://www.upwork.com/freelancers/mnacer</p>
+                </a>                
 
                 <a className="flex flex-row justify-center items-center gap-3  " href="https://youtube.com/@bootcamp3rs" target="_blank">
                   <img className="w-auto h-[2rem]" src={youtube} alt="youtube" />
