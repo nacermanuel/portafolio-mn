@@ -29,11 +29,13 @@ import figma from './assets/images/figma.png'
 import shopify from './assets/images/shopify.png'
 import drrosy from './assets/images/drrosy.gif'
 import upwork from './assets/images/upwork.png'
+import desenio from './assets/images/desenio.gif'
 import { Form } from "./components/Form";
 import { ModelAnfisa } from "./components/ModelAnfisa";
 import TodoGit from './assets/todo.gif'
 import { ModalTodo } from "./components/ModalTodo";
 import mn from './assets/manuel.jpg'
+import { ModalDrrosy } from "./components/ModalDrrosy";
 
 interface Prop{
     language: any
@@ -47,8 +49,8 @@ function AppEn({language}: Prop) {
   const [project4 , setProject4] = React.useState(false)    
   const [modal1, setModal1] = React.useState(false)
   const [modal2, setModal2] = React.useState(false)
-
-
+  const [modal3, setModal3] = React.useState(false)
+  const [modal4, setModal4] = React.useState(false)
 
   const openModal1 = ()=> {
     setModal1(true)
@@ -69,6 +71,28 @@ function AppEn({language}: Prop) {
     setModal2(false)
     document.body.style.overflow = 'auto' ;    
   } 
+
+  const openModal3 = ()=> {
+    setModal3(true)
+    document.body.style.overflow = 'hidden' ;
+  }
+
+  const closeModal3 = () => {
+    setModal3(false)
+    document.body.style.overflow = 'auto' ;    
+  } 
+
+  const openModal4 = ()=> {
+    setModal4(true)
+    document.body.style.overflow = 'hidden' ;
+  }
+
+  const closeModal4 = () => {
+    setModal4(false)
+    document.body.style.overflow = 'auto' ;    
+  } 
+
+
 
   const windowH = window.scrollY
 
@@ -122,7 +146,7 @@ function AppEn({language}: Prop) {
               <img className="rounded-md" src={AnfisaImage} alt="anfisa web" />
             </div>
             <div className={`${ project1 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
-              <p className="text-[17px] font-normal max-[1024px]:pb-4">Anfisa is a B2B cosmetics shop. They grew the business to 80 orders per month just by using WhatsApp as a sales tool. When they reached 110 sales per month, the number of messages became unmanageable. Therefore, we built this tool where customers can place orders themselves and complete the purchase via WhatsApp using a shareable link of their order.</p>
+              <p className="text-[17px] font-normal pb-4 max-[1024px]:pb-4">Anfisa is a B2B cosmetics shop. They grew the business to 80 orders per month just by using WhatsApp as a sales tool. When they reached 110 sales per month, the number of messages became unmanageable. Therefore, we built this tool where customers can place orders themselves and complete the purchase via WhatsApp using a shareable link of their order.</p>
               <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal1()}>
                 See how I built it 
               </div>   
@@ -136,7 +160,7 @@ function AppEn({language}: Prop) {
               <img className="rounded-md" src={TodoGit} alt="todo app gif" />
             </div>            
             <div className={`${ project2 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
-              <p className="text-[17px] font-normal max-[1024px]:pb-4">As a software developer, I have learned that one of the most fundamental aspects when building complex products is how to organize the workflow. Many times, I have started projects but didn't finish them due to a lack of organization. That's why I built a tool to structure the workflow when developing any project.</p>
+              <p className="text-[17px] font-normal pb-4 max-[1024px]:pb-4">As a software developer, I have learned that one of the most fundamental aspects when building complex products is how to organize the workflow. Many times, I have started projects but didn't finish them due to a lack of organization. That's why I built a tool to structure the workflow when developing any project.</p>
               <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal2()}>
                 See how I built it 
               </div>   
@@ -154,8 +178,8 @@ function AppEn({language}: Prop) {
               <img className="rounded-md" src={drrosy} alt="drrosy" />
             </div>
             <div className={`${ project3 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
-              <p className="text-[17px] font-normal max-[1024px]:pb-4">Rosy Sandhu, M.D., is a board-certified internal medicine specialist and the founding director of Neem Medical Spa, Boston’s premier wellness destination. We have built a beautiful WordPress site to enhance Dr. Sandhu's online presence. Through blog posts and email marketing, Dr. Sandhu will be able to reach a broader audience, thus having a positive impact on her business.</p>
-              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal1()}>
+              <p className="text-[17px] font-normal pb-4 max-[1024px]:pb-4">Rosy Sandhu, M.D., is a board-certified internal medicine specialist and the founding director of Neem Medical Spa, Boston’s premier wellness destination. We have built a beautiful WordPress site to enhance Dr. Sandhu's online presence. Through blog posts and email marketing, Dr. Sandhu will be able to reach a broader audience, thus having a positive impact on her business.</p>
+              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal3()}>
                 See how I built it 
               </div>   
             </div>
@@ -165,11 +189,11 @@ function AppEn({language}: Prop) {
           <div id="divSec3ProyectosTodo" className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] h-auto rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[100%] max-[1024px]:min-w-[20rem] max-[1024px]:px-2" onMouseEnter={()=>setProject4(true)} onMouseLeave={()=>setProject4(false)}>
             <p className="text-[25px] font-bold pb-2">Collaboration Landing Page</p>
             <div className={`${ project4 ? 'hidden' : 'flex flex-col h-auto justify-between'}  max-[1024px]:h-auto max-[1024px]:pb-4 max-[1024px]:flex max-[1024px]:flex-col`}>
-              <img className="rounded-md" src={TodoGit} alt="todo app gif" />
+              <img className="rounded-md" src={desenio} alt="desenio" />
             </div>            
             <div className={`${ project4 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
-              <p className="text-[17px] font-normal max-[1024px]:pb-4">As a software developer, I have learned that one of the most fundamental aspects when building complex products is how to organize the workflow. Many times, I have started projects but didn't finish them due to a lack of organization. That's why I built a tool to structure the workflow when developing any project.</p>
-              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal2()}>
+              <p className="text-[17px] font-normal pb-4 max-[1024px]:pb-4">Desenio is a worldwide pioneer in online sales of budget-friendly wall art. Recently, Desenio opted for a collaboration with a renowned influencer and engaged me to craft a straightforward yet captivating section showcasing the collaboration's episodes and featured items.</p>
+              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal4()}>
                 See how I built it 
               </div>   
             </div>
@@ -361,6 +385,12 @@ function AppEn({language}: Prop) {
 
     { modal2 && <div className="w-[100%] h-[120vh] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
     { modal2 && <ModalTodo heigth={windowH} onclose={()=> closeModal2() }/>}
+
+    { modal3 && <div className="w-[100%] h-[120vh] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
+    { modal3 && <ModalDrrosy heigth={windowH} onclose={()=> closeModal3() }/>}
+
+    { modal4 && <div className="w-[100%] h-[120vh] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
+    { modal4 && <ModalTodo heigth={windowH} onclose={()=> closeModal4() }/>}
 
     </>
   )

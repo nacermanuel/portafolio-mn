@@ -30,10 +30,12 @@ import shopify from './assets/images/shopify.png'
 import TodoGit from './assets/todo.gif'
 import drrosy from './assets/images/drrosy.gif'
 import upwork from './assets/images/upwork.png'
+import desenio from './assets/images/desenio.gif'
 import { FormES } from "./componentsES/FormES";
 import { ModelAnfisaES } from "./componentsES/ModelAnfisaES";
 import { ModalTodoES } from "./componentsES/ModalTodoES";
 import mn from './assets/manuel.jpg'
+import { ModalDrrosyES } from "./componentsES/ModalDrrosyES";
 
 interface Prop{
     language: any
@@ -46,7 +48,8 @@ function AppEs({language}: Prop) {
   const [project4 , setProject4] = React.useState(false)    
   const [modal1, setModal1] = React.useState(false)
   const [modal2, setModal2] = React.useState(false)
-
+  const [modal3, setModal3] = React.useState(false)
+  const [modal4, setModal4] = React.useState(false)
 
 
   const openModal1 = ()=> {
@@ -68,6 +71,28 @@ function AppEs({language}: Prop) {
     setModal2(false)
     document.body.style.overflow = 'auto' ;    
   } 
+
+  const openModal3 = ()=> {
+    setModal3(true)
+    document.body.style.overflow = 'hidden' ;
+  }
+
+  const closeModal3 = () => {
+    setModal3(false)
+    document.body.style.overflow = 'auto' ;    
+  } 
+
+  const openModal4 = ()=> {
+    setModal4(true)
+    document.body.style.overflow = 'hidden' ;
+  }
+
+  const closeModal4 = () => {
+    setModal4(false)
+    document.body.style.overflow = 'auto' ;    
+  } 
+
+
 
   const windowH = window.scrollY
 
@@ -121,7 +146,7 @@ function AppEs({language}: Prop) {
               <img className="rounded-md" src={AnfisaImage} alt="anfisa web" />
             </div>
             <div className={`${ project1 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
-              <p className="text-[17px] font-normal max-[1024px]:pb-4">Anfisa es una tienda de cosmética B2B. Crecieron el negocio a 80 pedidos por mes usando  WhatsApp como herramienta de ventas. Cuando llegaron a las 110 ventas por mes, la cantidad de mensajes se volvió inmanejable. Por lo tanto, creamos esta herramienta en la que los clientes pueden realizar pedidos por sí mismos y completar la compra a través de WhatsApp utilizando un enlace para compartir de su pedido.</p>
+              <p className="text-[17px] font-normal pb-4 max-[1024px]:pb-4">Anfisa es una tienda de cosmética B2B. Crecieron el negocio a 80 pedidos por mes usando  WhatsApp como herramienta de ventas. Cuando llegaron a las 110 ventas por mes, la cantidad de mensajes se volvió inmanejable. Por lo tanto, creamos esta herramienta en la que los clientes pueden realizar pedidos por sí mismos y completar la compra a través de WhatsApp utilizando un enlace para compartir de su pedido.</p>
               <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal1()}>
                 Ver cómo lo desarrollé 
               </div>   
@@ -135,7 +160,7 @@ function AppEs({language}: Prop) {
               <img className="rounded-md" src={TodoGit} alt="todo app gif" />
             </div>            
             <div className={`${ project2 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
-              <p className="text-[17px] font-normal max-[1024px]:pb-4">Como desarrollador de software, aprendí que uno de los aspectos más fundamentales al crear productos complejos, es cómo organizar el flujo de trabajo. Muchas veces comencé proyectos pero no los terminé por falta de organización. Es por eso que construí una herramienta para estructurar el flujo de trabajo al desarrollar cualquier proyecto.</p>
+              <p className="text-[17px] font-normal pb-4 max-[1024px]:pb-4">Como desarrollador de software, aprendí que uno de los aspectos más fundamentales al crear productos complejos, es cómo organizar el flujo de trabajo. Muchas veces comencé proyectos pero no los terminé por falta de organización. Es por eso que construí una herramienta para estructurar el flujo de trabajo al desarrollar cualquier proyecto.</p>
               <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal2()}>
                 Ver cómo lo desarrollé 
               </div>   
@@ -153,8 +178,8 @@ function AppEs({language}: Prop) {
               <img className="rounded-md" src={drrosy} alt="anfisa web" />
             </div>
             <div className={`${ project3 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
-              <p className="text-[17px] font-normal max-[1024px]:pb-4">Rosy Sandhu, M.D., is a board-certified internal medicine specialist and the founding director of Neem Medical Spa, Boston’s premier wellness destination. We have built a beautiful WordPress site to enhance Dr. Sandhu's online presence. Through blog posts and email marketing, Dr. Sandhu will be able to reach a broader audience, thus having a positive impact on her business.</p>
-              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal1()}>
+              <p className="text-[17px] font-normal pb-4 max-[1024px]:pb-4">Rosy Sandhu, M.D., es una especialista en medicina interna certificada y directora fundadora de Neem Medical Spa, uno de los principales destinos de Wellness en Boston. Hemos construido un magnífico sitio en WordPress para mejorar la presencia en línea de la Dra. Sandhu. A través de publicaciones de blog y marketing por correo electrónico, la Dra. Sandhu podrá llegar a una audiencia más amplia, teniendo así un impacto positivo en su negocio.</p>
+              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal3()}>
                 Ver cómo lo desarrollé 
               </div>   
             </div>
@@ -162,13 +187,13 @@ function AppEs({language}: Prop) {
 
           {/* PROYECTO DESENIO */}
           <div id="divSec3ProyectosTodo" className="bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] h-auto rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[100%] max-[1024px]:min-w-[20rem] max-[1024px]:px-2" onMouseEnter={()=>setProject4(true)} onMouseLeave={()=>setProject4(false)}>
-            <p className="text-[19px] font-bold pb-2">Web App: Control de Productividad</p>
+            <p className="text-[19px] font-bold pb-2">Landing-page de colaboración</p>
             <div className={`${ project4 ? 'hidden' : 'flex flex-col h-auto justify-between'}  max-[1024px]:h-auto max-[1024px]:pb-4 max-[1024px]:flex max-[1024px]:flex-col`}>
-              <img className="rounded-md" src={TodoGit} alt="todo app gif" />
+              <img className="rounded-md" src={desenio} alt="desenio" />
             </div>            
             <div className={`${ project4 ? 'flex flex-col h-auto justify-between' : 'hidden'} max-[1024px]:flex max-[1024px]:flex-col max-[1024px]:h-auto`}>
-              <p className="text-[17px] font-normal max-[1024px]:pb-4">As a software developer, I have learned that one of the most fundamental aspects when building complex products is how to organize the workflow. Many times, I have started projects but didn't finish them due to a lack of organization. That's why I built a tool to structure the workflow when developing any project.</p>
-              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal2()}>
+              <p className="text-[17px] font-normal pb-4 max-[1024px]:pb-4">Desenio es una empresa pionera a nivel mundial en ventas en línea de arte. Recientemente, Desenio optó por una colaboración con un influencer de renombre y me contrató para crear una sección sencilla pero cautivadora que muestra los episodios y artículos destacados de la colaboración.</p>
+              <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg h-fit px-3 hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl" onClick={()=> openModal4()}>
                 Ver cómo lo desarrollé 
               </div>   
             </div>
@@ -359,6 +384,12 @@ function AppEs({language}: Prop) {
 
     { modal2 && <div className="w-[100%] h-[120vh] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
     { modal2 && <ModalTodoES heigth={windowH} onclose={()=> closeModal2() }/>}
+
+    { modal3 && <div className="w-[100%] h-[120vh] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
+    { modal3 && <ModalDrrosyES heigth={windowH} onclose={()=> closeModal3() }/>}
+
+    { modal4 && <div className="w-[100%] h-[120vh] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
+    { modal4 && <ModalTodoES heigth={windowH} onclose={()=> closeModal4() }/>}
 
     </>
   )
