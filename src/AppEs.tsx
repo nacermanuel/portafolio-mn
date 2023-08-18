@@ -175,7 +175,7 @@ function AppEs({language}: Prop) {
 
           {/* PROYECTO DR ROSY */}
           <div id="divSec3ProyectosAnfisa" className=" bg-[#302b46] min-w-[25rem] w-[45%] min-h-[19rem] h-auto rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[100%] max-[1024px]:min-w-[20rem] max-[1024px]:px-2 max-[1024px]:mb-4" onMouseEnter={()=>setProject3(true)} onMouseLeave={()=>setProject3(false)}>
-            <p className="text-[19px] font-bold pb-2">Página de empresa en WordPress</p>
+            <p className="text-[19px] font-bold pb-2">WordPress para empresa</p>
             <div className={`${ project3 ? 'hidden' : 'flex flex-col h-auto justify-between'} max-[1024px]:h-auto max-[1024px]:pb-4 max-[1024px]:flex max-[1024px]:flex-col`}>
               <img className="rounded-md" src={drrosy} alt="anfisa web" />
             </div>
