@@ -30,6 +30,8 @@ import shopify from './assets/images/shopify.png'
 import drrosy from './assets/images/drrosy.gif'
 import upwork from './assets/images/upwork.png'
 import desenio from './assets/images/desenio.gif'
+import elementor from './assets/images/elementor.png'
+import seo from './assets/images/seo.png'
 import { Form } from "./components/Form";
 import { ModelAnfisa } from "./components/ModelAnfisa";
 import TodoGit from './assets/todo.gif'
@@ -266,7 +268,7 @@ function AppEn({language}: Prop) {
           </div>  
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
-            <img className="bg-white w-auto h-[1.5rem]" src={mongoose} alt="mongoose" /> <p>Mongoose</p> 
+            <img className="bg-white w-auto h-[1.5rem] rounded-[99999px]" src={mongoose} alt="mongoose" /> <p>Mongoose</p> 
           </div>   
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
@@ -292,6 +294,10 @@ function AppEn({language}: Prop) {
           </div>   
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={elementor} alt="gitflow" /> <p>Elementor</p> 
+          </div>  
+
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
             <img className="w-auto h-[1.5rem]" src={shopify} alt="gitflow" /> <p>Shopify</p> 
           </div>  
 
@@ -299,6 +305,9 @@ function AppEn({language}: Prop) {
             <img className="w-auto h-[1.5rem]" src={figma} alt="railway" /> <p>Figma</p> 
           </div>  
 
+          <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
+            <img className="w-auto h-[1.5rem]" src={seo} alt="railway" /> <p>SEO</p> 
+          </div>  
 
         </div>
 
@@ -310,7 +319,7 @@ function AppEn({language}: Prop) {
           </div>   
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
-            <img className="w-auto h-[1.5rem]" src={gitflow} alt="gitflow" /> <p>Git Flow</p> 
+            <img className="w-auto h-[1.5rem] rounded-[99999px]" src={gitflow} alt="gitflow" /> <p>Git Flow</p> 
           </div>  
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
@@ -322,11 +331,11 @@ function AppEn({language}: Prop) {
           </div>  
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
-            <img className="w-auto h-[1.5rem]" src={firebase} alt="firebase" /> <p>Firebase</p> 
+            <img className="w-auto h-[1.5rem] rounded-[99999px]" src={firebase} alt="firebase" /> <p>Firebase</p> 
           </div>  
 
           <div className="w-fit border border-[#a32c3c] rounded-lg h-fit px-3 py-1 bg-[#631c25] flex gap-2">
-            <img className="w-auto h-[1.5rem]" src={clean} alt="clean" /> <p>Clean Architecture</p> 
+            <img className="w-auto h-[1.5rem] rounded-[99999px]" src={clean} alt="clean" /> <p>Clean Architecture</p> 
           </div>  
 
         </div>

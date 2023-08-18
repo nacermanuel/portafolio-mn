@@ -147,7 +147,7 @@ export const ModalTodo = ( {heigth, onclose}: Props) => {
         <div className="flex flex-row pt-3 w-full justify-around items-center max-[1024px]:items-center max-[1024px]:h-[9vh] max-[1024px]:py-2">
           <a className="flex justify-center items-center w-full max-[1024px]:h-full" href="https://todoapp-pern.web.app/" target="_blank">
           <div className="bg-[#4a106b] border-4 border-[#ffffff] rounded-lg hover:bg-[#fffeff] hover:text-black cursor-pointer text-xl text-white text-center w-[50%] h-auto py-2 max-[1024px]:h-[90%] max-[1024px]:w-[90%] max-[1024px]:text-sm">
-             &#128187; Web Site &#128187;
+             &#128187; Visit Web Site &#128187;
           </div> 
           </a>
  
