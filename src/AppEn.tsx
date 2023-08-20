@@ -38,6 +38,7 @@ import TodoGit from './assets/todo.gif'
 import { ModalTodo } from "./components/ModalTodo";
 import mn from './assets/manuel.jpg'
 import { ModalDrrosy } from "./components/ModalDrrosy";
+import { ModalDesenio } from "./components/ModalDesenio";
 
 interface Prop{
     language: any
@@ -117,7 +118,7 @@ function AppEn({language}: Prop) {
         </div>
         <div className="flex gap-2 max-[1024px]:flex-col-reverse">
           <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer ">
-            <a href="https://drive.google.com/file/d/1mOiVR1jir5DTfTZgXs8jjTq2SWYzGxxX/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/file/d/1UgU72nc8H07XZj9l_Ob-TH4nmn_NbVnh/view?usp=sharing" target="_blank">
               <p className="text-white font-thin">Resume &#128196;</p> 
             </a>
           </div>
@@ -129,10 +130,10 @@ function AppEn({language}: Prop) {
 
       {/* SECCION 2 */}
       <div id="divSec2" className="bg-[#302b46] w-full rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[95%] max-[1024px]:px-2">
-        Hello, I'm Manuel, a full-stack web developer. I've acquired  my skills through a rigorous bootcamp called SoyHenry and extensive self-study, but my true expertise has come from building my own projects. My passion lies in leveraging technology as a problem solver, and my goal is to work on projects that align with this vision.
+        Hello! I am Manuel, a full-stack web developer with 3+ years of experience. My track record is marked by a consistent achievement: making sure clients are not only satisfied but delighted with the outcome of my work. I specialize in building and solidifying your online presence. Regardless of whether you have a well-defined vision for your project or need assistance refining an idea, I will be your companion throughout the journey, dedicated to crafting and bringing to life your website or landing page. My passion lies in leveraging technology as a problem solver, and my goal is to work within projects that share this vision.
         <br />
         <br />
-         In addition to my technical skills, I have held leading roles in the operation of businesses with annual revenue surpassing USD$100,000. This hands-on experience has given me a deep understanding of commercial strategies, expertise in running complex Facebook ads campaigns, and a comprehensive grasp of financial structures within businesses. I leverage my tech skills and business expertise to bring value to the table. 
+        In addition to my technical skills, I have held leading roles in the operation of businesses with annual revenue surpassing USD$1’000,000. This hands-on experience has given me a deep understanding of commercial strategies, expertise in running complex Facebook ads campaigns, and a comprehensive grasp of financial structures within businesses. I leverage my tech skills and business expertise to bring value to the table.
       </div>
 
       {/* SECCION 3 */}
@@ -399,7 +400,7 @@ function AppEn({language}: Prop) {
     { modal3 && <ModalDrrosy heigth={windowH} onclose={()=> closeModal3() }/>}
 
     { modal4 && <div className="w-[100%] h-[120vh] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
-    { modal4 && <ModalTodo heigth={windowH} onclose={()=> closeModal4() }/>}
+    { modal4 && <ModalDesenio heigth={windowH} onclose={()=> closeModal4() }/>}
 
     </>
   )

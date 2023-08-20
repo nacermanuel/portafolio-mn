@@ -38,6 +38,7 @@ import { ModelAnfisaES } from "./componentsES/ModelAnfisaES";
 import { ModalTodoES } from "./componentsES/ModalTodoES";
 import mn from './assets/manuel.jpg'
 import { ModalDrrosyES } from "./componentsES/ModalDrrosyES";
+import { ModalDesenioES } from "./componentsES/ModalDesenioES";
 
 interface Prop{
     language: any
@@ -117,7 +118,7 @@ function AppEs({language}: Prop) {
         </div>
         <div className="flex gap-2 max-[1024px]:flex-col-reverse">
           <div className="border border-white rounded-lg h-fit px-3 hover:bg-[#302b46] cursor-pointer ">
-            <a href="https://drive.google.com/file/d/1wdIphjb8smivPWg1W7oWOFpm_hBEDLEk/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/file/d/13JMmc7LOPUwkONyDIZzchJbdfPjL9gQB/view?usp=sharing" target="_blank">
               <p className="text-white font-thin">Curriculum &#128196;</p> 
             </a>
           </div>
@@ -129,10 +130,10 @@ function AppEs({language}: Prop) {
 
       {/* SECCION 2 */}
       <div id="divSec2" className="bg-[#302b46] w-full rounded-lg py-4 px-12 font-semibold text-center hover:bg-[#574e80] max-[1024px]:w-[95%] max-[1024px]:px-2">
-        Hola, soy Manuel, desarrollador web full-stack. Adquirí mis habilidades a través de un riguroso bootcamp llamado SoyHenry y mucho estudio autodidacta. Pero la verdadera experiencia la gané construyendo mis propios proyectos. Me apasiona la idea de utilizar la tecnología para resolver problemas, y mi objetivo es trabajar en proyectos que alineen a esta visión.
+        Hola! Soy Manuel, desarrollador web full-stack con 3+ años de experiencia. En mi trayectoria tengo un objetivo constante: asegurarme de que los clientes no solo estén satisfechos, sino encantados con los resultados de mi trabajo. Me especializo en construir y consolidar tu presencia en línea. Ya sea que tengas una visión bien definida para tu proyecto o necesites ayuda para afinar una idea, seré tu compañero a lo largo de todo el camino, dedicado a crear y dar vida a tu sitio web o landing-page. Mi pasión está en aprovechar la tecnología como solucionador de problemas, y mi objetivo es trabajar en proyectos que compartan esta visión.
         <br />
         <br />
-        Además de mis habilidades técnicas, he ocupado roles de liderazgo en la operación de negocios con ingresos anuales que superan los USD$100,000. Esta experiencia práctica me ha brindado una comprensión profunda de estrategias comerciales, experiencia en la ejecución de campañas publicitarias complejas de Facebook y una comprensión integral de las estructuras financieras dentro de las empresas. Apalanco mis habilidades tecnológicas y mi experiencia de negocios para agregar valor.
+        Además de mis habilidades técnicas, he desempeñado roles de liderazgo en la operación de negocios con ingresos anuales que superan los USD$1,000,000. Esta experiencia práctica me ha brindado un profundo entendimiento de diferentes estrategias comerciales, experiencia en la gestión de grandes campañas de anuncios en Facebook y una comprensión integral de las estructuras financieras de los negocios. Utilizo mis habilidades tecnológicas y experiencia empresarial para aportar valor al proyecto.
       </div>
 
       {/* SECCION 3 */}
@@ -399,7 +400,7 @@ function AppEs({language}: Prop) {
     { modal3 && <ModalDrrosyES heigth={windowH} onclose={()=> closeModal3() }/>}
 
     { modal4 && <div className="w-[100%] h-[120vh] left-0 bg-black absolute opacity-70" style={divBackground}></div> }
-    { modal4 && <ModalTodoES heigth={windowH} onclose={()=> closeModal4() }/>}
+    { modal4 && <ModalDesenioES heigth={windowH} onclose={()=> closeModal4() }/>}
 
     </>
   )
